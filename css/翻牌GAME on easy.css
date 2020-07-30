@@ -1,0 +1,95 @@
+* {
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+}
+
+
+nav {
+    position: fixed;
+    top: 0vh;
+    z-index: 2;
+    height: 80px;
+    /* background-color: #262219; */
+    /* background-color: rgba(0, 0, 0, 1); */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0)0%, rgba(90, 33, 27, 1)100%);
+    margin-bottom: 30px;
+}
+
+nav>a>img {
+    height: 10vh;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../img/web/scene_chara.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.btn {
+    width: 100%;
+}
+
+.cardGame {
+    margin: auto;
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 1000px;
+}
+
+.myCard {
+    width: 30%;
+    height: 40%;
+    position: relative;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: all 0.3s;
+
+}
+
+.myCard:hover {
+    transform: scale(0.97);
+}
+
+.myCard:active {
+    transform: scale(0.93);
+}
+
+.myCard img {
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.frontSide,
+.backSide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #1C7CCC;
+}
+
+.myCard.flip {
+    transform: rotateY(180deg);
+}
+
+.frontSide {
+    transform: rotateY(180deg);
+}
+
+body {
+    overflow: hidden;
+}
+
+#nickName {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 5;
+    margin: auto;
+    display: none;
+}

@@ -1,0 +1,86 @@
+* {
+    font-size: 20px;
+    font-family: Microsoft JhengHei;
+}
+
+img {
+    object-fit: cover;
+}
+
+
+
+body {
+    background-image: url("../img/web/scene_story.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0vh;
+    z-index: 2;
+    height: 80px;
+    /* background-color: #262219; */
+    /* background-color: rgba(0, 0, 0, 1); */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0)0%, rgba(90, 33, 27, 1)100%);
+    margin-bottom: 30px;
+}
+
+
+nav>a>img {
+    height: 10vh;
+}
+
+.tabContents {
+    display: block;
+    width: 80%;
+    margin: auto;
+
+    position: relative;
+    color: white;
+}
+
+.tabSlide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 1s;
+
+}
+
+.tabSlide.active {
+    opacity: 1;
+}
+
+.tabContents img {
+    width: 100%;
+}
+
+.card-img {
+    object-fit: cover;
+}
+
+.card-body {
+    height: 10px;
+
+}
+
+.card-body {
+    margin-bottom: 0px;
+}
+
+#pointup {
+    position: fixed;
+    right: -25%;
+    bottom: 0;
+    cursor: pointer;
+
+}

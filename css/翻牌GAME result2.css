@@ -1,0 +1,39 @@
+* {
+    font-size: 24px;
+    font-family: Microsoft JhengHei;
+}
+
+
+
+nav {
+    position: fixed;
+    top: 0vh;
+    z-index: 2;
+    height: 80px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0)0%, rgba(90, 33, 27, 1)100%);
+    margin-bottom: 30px;
+}
+
+nav>a>img {
+    height: 10vh;
+}
+
+body {
+    background-image: url("../img/web/scene_chara.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    overflow-x: hidden;
+
+}
+
+#winPic {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+#winRole{
+    right: 5%;
+}
